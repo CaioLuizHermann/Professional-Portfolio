@@ -92,7 +92,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 
-  opacity: 0.08;
+  opacity: 0.007;
   z-index: -1;
   pointer-events: none;
 }
@@ -216,4 +216,140 @@ header {
     transform: translateY(0);
   }
 }
-about
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  min-height: 600px;
+  padding: 0 5%;
+  margin-left: 100px;
+}
+.about-gallery {
+  width: 600px;
+  height: 500px;
+  position: relative;
+}
+.terminal-card {
+  position: absolute;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--color-surface);
+
+}
+.terminal-frame {
+  overflow: hidden;
+  position: relative;
+}
+.terminal-frame img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-1 {
+  height: 320px;
+  top: 0px;
+  right: 60px;
+  z-index: 3;
+  margin-top: 70px;
+  width: 320;
+}
+.card-2 {
+  height: 360px;
+  top: 180px;
+  left: 0;
+  z-index: 4;
+  width: 260px;
+}
+.card-3 {
+  height: 180px;
+  width: 220px;
+  top: 250px;
+  right: 0;
+  z-index: 5;
+}
+.terminal-frame img {
+    transform: translateY(-40px);
+}
+.about h1 {
+  font-family: var(--font-primary);
+}
+.about h2 {
+  font-family: var(--font-secondary);
+  color: var(--color-accent);
+  font-weight: 100;
+  font-size: 15px;
+}
+.about p {
+  font-family: var(--font-mono);
+  color: var(--color-muted);
+}
+.about span {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+}
+.about span:nth-child(2) {
+  color: var(--color-text);
+  font-family: var(--font-mono);
+}
+.about-gallery {
+  position: relative;
+  width: 600px;
+  height: 500px;
+}
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #262626;
+  padding: 10px;
+}
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+.terminal-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FF5F57;
+}
+.terminal-dots span:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d2ff57;
+}
+.terminal-dots span:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #57ff5f;
+}
+.card-3 .terminal-frame {
+  height: 140px;
+  overflow: hidden;
+}
+.card-3 .terminal-frame img{
+  height: 230%;
+  width: 100%;
+  height: 230px;
+  max-width: none;
+  object-fit: cover;
+  position: relative;
+}
+.card-2 .terminal-frame {
+  height: 400px;
+  overflow: hidden;
+}
+.card-2 .terminal-frame img{
+  width: 130%;
+  height: 130%;
+  max-width: none;
+  object-fit: cover;
+  position: relative;
+}
