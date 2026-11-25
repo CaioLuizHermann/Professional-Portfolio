@@ -76,14 +76,184 @@
             </div>
         </section>
         <section class="skills" id="skills">
-            
+            <div class="skills-header">
+                <h2>03 / TECHNICAL SKILLS</h2>
+                <h1>My technical arsenal.</h1>
+                <p>Technologies, tools and concepts I've been exploring.</p>
+            </div>
 
-
-
-
-
-
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/icons/code.svg" alt="">
+                    </div>
+                        <h3>Programming Languages.</h3>
+                        <div class="skills-tags">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                            <span>Lua</span>
+                            <span>Bash</span>
+                            <span>Shell</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/icons/bug.svg" alt="">
+                    </div>
+                    <h3>Vulnerability reports.</h3>
+                    <p>Previous security breaches identified and reported to the responsible organization.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/icons/globe-code.svg" alt="">
+                    </div>
+                    <h3> Web Development.</h3>
+                    <div class="skills-tags">
+                        <span>HTML5</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/icons/shield-cog-corner.svg" alt="">
+                    </div>
+                    <h3> Cybersecurity.</h3>
+                    <div class="skills-tags">
+                        <span>Linux</span>
+                        <span>Nmap</span>
+                        <span>Forensics</span>
+                        <span>Networks</span>
+                        <span>Virtual Machines</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/icons/terminal.svg" alt="">
+                    </div>
+                    <h3>Development Tools.</h3>
+                    <div class="skills-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>SQLite</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/icons/cpu.svg" alt="">
+                    </div>
+                    <h3>Hardware.</h3>
+                    <div class="skills-tags">
+                        <span>PC Building</span>
+                        <span>Maintanence</span>
+                        <span>Diagnostics</span>
+                    </div>
+                </div>
+            </div>
         </section>
+        <section class="contact" id="contact">
+
+    <div class="contact-header">
+        <h2>04 / CONTACT</h2>
+        <h1>Let's build something.</h1>
+        <p>Interested in working together? Feel free to reach out.</p>
+    </div>
+
+    <div class="contact-terminal">
+
+        <div class="terminal-header">
+            <div class="terminal-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <span class="terminal">contact.sh</span>
+        </div>
+
+        <form id="contact-form"
+              action="https://formspree.io/f/SEU_FORM_ID"
+              method="POST">
+
+            <p class="terminal contact-init">
+                > Initialize connection...
+            </p>
+
+            <div class="contact-grid">
+
+                <div class="form-group">
+                    <label for="name">Full name *</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Your name"
+                           maxlength="100"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address *</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="you@company.com"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text"
+                           id="company"
+                           name="company"
+                           placeholder="Company name">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option>Job opportunity</option>
+                        <option>Internship opportunity</option>
+                        <option>Project collaboration</option>
+                        <option>Technical inquiry</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Message *</label>
+
+                    <textarea id="message"
+                              name="message"
+                              placeholder="Tell me more..."
+                              rows="6"
+                              maxlength="3000"
+                              required></textarea>
+                </div>
+
+            </div>
+
+            <button type="submit" id="contact-submit">
+                Send message
+            </button>
+
+            <p class="contact-privacy">
+                Your information will be used to respond
+                to your message and processed through Formspree.
+            </p>
+
+            <p id="form-status" role="status"></p>
+
+        </form>
+
+    </div>
+
+</section>
     </main>
     <script src="js/main.js"></script>
 </body>
